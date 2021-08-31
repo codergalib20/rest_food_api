@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+  font-family: "Pacifico", cursive;
+  background: #33d9b2;
+  display: flex;
+  justify-content: center;
+}
+main {
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: 0 0 10px 1px rgba(0, 255, 55, 0.548);
+  z-index: 1;
+  margin-top: 3rem;
+}
+main::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  filter: blur(10px);
+  background: rgba(255, 255, 255, 0.411);
+  z-index: -1;
+}
+section.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0.3rem auto;
+}
+.search-box {
+  width: 100%;
+  max-width: 350px;
+  background: #33d9b2;
+  border: 1px solid #111;
+  height: 30px;
+  display: flex;
+  align-items: stretch;
+  border-radius: 50px;
+  padding: 0 0.4rem;
+}
+.search-box input {
+  width: 80%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: transparent;
+  color: #111;
+  letter-spacing: 1px;
+}
+.search-box input::placeholder {
+  color: #111;
+}
+.search-box button {
+  width: 20%;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.clear-btn {
+  display: none;
+}
+.warning-for-value {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #111;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.result-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.meal-item {
+  font-family: "Cairo", sans-serif;
+  width: 49%;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+.meal-item > div {
+  display: flex;
+  /* align-items: center; */
+  padding-left: 1rem;
+  padding-top: 1rem;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.meal-item img {
+  width: 100%;
+}
+.meal-item h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.2rem 0;
+  color: #111;
+}
+.meal-item a {
+  text-decoration: none;
+  color: #e83a3b;
+}
+/*
+====================================
+====================================
+*/
+@media only screen and (max-width: 500px) {
+  .meal-item {
+    width: 100%;
+  }
+}
