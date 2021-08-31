@@ -8,7 +8,9 @@
 }
 body {
   font-family: "Pacifico", cursive;
-  background: #33d9b2;
+  background: linear-gradient(#33d9b2b6,#33d9b29f), url(../ok.jpg) no-repeat center center;
+  background-size: cover;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
